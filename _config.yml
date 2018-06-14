@@ -1,11 +1,6 @@
 destination: public
 source: src
 title: Jekyll + Contentful starter repo
-sass:
-    sass_dir: assets/_sass
-    style: compressed
-title: Your awesome title
-email: your-email@example.com
 description: A basic starter repo for a Jekyll build that uses Contentful as a CMS.
 contentful:
   spaces:
