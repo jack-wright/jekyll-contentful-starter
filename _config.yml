@@ -1,0 +1,30 @@
+destination: public
+source: src
+title: Jekyll contentful starter repo
+sass:
+    sass_dir: assets/_sass
+    style: compressed
+description: Basic Jekyll starter repo with integration of jekyll-contentful-data-import plugin as well as
+the data_page_generator plugin. Running
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+contentful:
+  spaces:
+    - posts:
+        base_path: 'src/' # where the data directory should be stored
+        space: # contentful space id
+        access_token: # contentful space access token
+        destination: '/' # where the data file will be stored
+
+page_gen:
+    - data: # data you want to display
+      template: 'post' # Template for the pages generated
+      name: 'slug' # What name you want for the file
+      base_path: src/ # Where the data directory is stored
+      dir: 'posts' # The name of the directory you want the pages to be created in
+      index_files: true # Whether the pages will be named or whether they will be index files in named directories

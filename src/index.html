@@ -1,0 +1,8 @@
+---
+title: Home
+permalink: /
+---
+
+{% for post in site.data.posts.testBlogPost %}
+    <h1><a href="posts/{{ post.slug }}">{{ post.title }}</a></h1>
+{% endfor %}
