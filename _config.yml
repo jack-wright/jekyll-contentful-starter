@@ -36,8 +36,8 @@ contentful:
   spaces:
     - posts:
         base_path: src/
-        space: 7n7u37wigd8z
-        access_token: 07618fdcaef5665154e0bbc4abb3c9ecb38e57e9314a8a0c90a66391707b0a2c
+        space: ENV['CONTENTFUL_SPACE']
+        access_token: ENV['CONTENTFUL_TOKEN']
         destination: /
 
 page_gen:
