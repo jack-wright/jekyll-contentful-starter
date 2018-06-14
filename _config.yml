@@ -36,8 +36,8 @@ contentful:
   spaces:
     - posts:
         base_path: src/
-        space: ${CONTENTFUL_SPACE}
-        access_token: $[CONTENTFUL_TOKEN]
+        space: ENV_CONTENTFUL_SPACE
+        access_token: ENV_CONTENTFUL_TOKEN
         destination: /
 
 page_gen:
