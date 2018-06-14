@@ -1,4 +1,4 @@
-![logo]('https://raw.githubusercontent.com/jack-wright/jekyll-contentful-starter/master/Jekyll.png')
+![logo](https://raw.githubusercontent.com/jack-wright/jekyll-contentful-starter/master/Jekyll.png)
 # Jekyll contentful starter repo
 
 A basic starter repo for a Jekyll build that uses Contentful as a CMS.
