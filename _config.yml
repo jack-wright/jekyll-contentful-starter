@@ -1,30 +1,49 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 destination: public
 source: src
-title: Jekyll contentful starter repo
+title: Know Things wiki
 sass:
     sass_dir: assets/_sass
     style: compressed
-description: Basic Jekyll starter repo with integration of jekyll-contentful-data-import plugin as well as
-the data_page_generator plugin. Running
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
 
 # Build settings
 markdown: kramdown
 
-plugins:
-  - jekyll-feed
-
 contentful:
   spaces:
     - posts:
-        base_path: 'src/' # where the data directory should be stored
-        space: # contentful space id
-        access_token: # contentful space access token
-        destination: '/' # where the data file will be stored
+        base_path: src/
+        space: 7n7u37wigd8z
+        access_token: 07618fdcaef5665154e0bbc4abb3c9ecb38e57e9314a8a0c90a66391707b0a2c
+        destination: /
 
 page_gen:
-    - data: # data you want to display
-      template: 'post' # Template for the pages generated
-      name: 'slug' # What name you want for the file
-      base_path: src/ # Where the data directory is stored
-      dir: 'posts' # The name of the directory you want the pages to be created in
-      index_files: true # Whether the pages will be named or whether they will be index files in named directories
+    - data: 'posts.testBlogPost'
+      template: 'post'
+      name: 'slug'
+      base_path: src/
+      dir: 'posts'
+      index_files: true
