@@ -6,18 +6,14 @@
   "author": "Jack Wright <jtwright89@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "watch": "NODE_ENV=development yarn install && webpack && jekyll contentful && jekyll serve",
-    "dev": "NODE_ENV=development yarn install && webpack && jekyll contentful && jekyll build",
-    "production": "NODE_ENV=production jekyll contentful && jekyll build"
+    "setup": "bundle install && yarn install",
+    "parcel:build": "parcel build src/_js/app.js -d src/assets/build",
+    "watch": "NODE_ENV=development yarn install && yarn run parcel:build && jekyll contentful && jekyll serve",
+    "dev": "NODE_ENV=development yarn install && yarn run parcel:build && jekyll contentful && jekyll build",
+    "production": "NODE_ENV=production && yarn run parcel:build && jekyll contentful && jekyll build"
   },
   "dependencies": {
-    "css-loader": "^0.28.11",
-    "extract-text-webpack-plugin": "^3.0.2",
     "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.3",
-    "style-loader": "^0.21.0"
-  },
-  "devDependencies": {
-    "webpack": "^3.11.0"
+    "parcel": "^1.9.2"
   }
 }

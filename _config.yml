@@ -10,9 +10,9 @@ contentful:
         access_token: ENV_CONTENTFUL_TOKEN
         destination: /
 page_gen:
-    - data: 'posts.testBlogPost'
+    - data: 'posts.blogPost'
       template: 'post'
-      name: 'slug'
+      name: 'title'
       base_path: src/
       dir: 'posts'
       index_files: true

@@ -1,0 +1,1 @@
+{"version":3,"sources":["app.js"],"names":["console","log"],"mappings":";;;AAEA,aAFA,QAAA,uBAEAA,QAAQC,IAAI","file":"app.map","sourceRoot":"../../_js","sourcesContent":["import '../_sass/style.scss';\n\nconsole.log('Hello world');\n"]}

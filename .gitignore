@@ -1,3 +1,5 @@
 public/
 Gemfile.lock
 node_modules
+.cache
+src/assets/build
