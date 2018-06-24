@@ -1,0 +1,35 @@
+---
+layout: default
+title: Style guide
+permalink: /style-guide/
+colors: ['blue', 'white', 'gold']
+description: Style guide for new blog
+---
+
+<h1 class="s-typography__heading">Style guide</h1>
+
+<section class="c-style-guide__section">
+    <h2 class="s-typography__section-heading">Colors</h2>
+    <p class="c-style-guide__text">For the colors on my blog I am going to go with Blue, White and Gold. This could definitely change
+    as I get further in to the project, but for now I am concentrating my site on being fast, accessible and clean</p>
+    <div class="c-style-guide__color-row">
+        {% for color in page.colors %}
+            <div class="c-color-block c-color-block--{{color}}">
+                <div class="c-color-block__caption"><p class="s-typography--light">#001234</p></div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+
+
+<section class="c-style-guide__section--column">
+    <h2 class="s-typography__section-heading">Typography</h2>
+    <p class="c-style-guide__text">The Typefaces I am using are both Google fonts. Unoriginally, I am using a Serif
+    typeface for the Headings and a sans-serif font for body text. The typefaces may be subject to change as the design
+    grows, but for now I have focussed on accessibility, so legibility is key.</p>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <p>Normal</p>
+    <p class="s-typography--bold">Bold</p>
+</section>

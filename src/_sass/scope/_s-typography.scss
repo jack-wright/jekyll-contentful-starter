@@ -1,0 +1,21 @@
+.s-typography {
+    &__heading {
+        text-align: center;
+    }
+
+    &__section-heading {
+        text-align: center;
+    }
+
+    &--bold {
+        font-weight: bold;
+    }
+
+    &--margin-large {
+        margin: 2.5rem;
+    }
+
+    &--margin-small {
+        margin: 1.5rem;
+    }
+}

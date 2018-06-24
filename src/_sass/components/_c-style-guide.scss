@@ -1,0 +1,18 @@
+.c-style-guide {
+    &__section {
+        margin-bottom: 2.5rem;
+
+        &--column {
+            lost-flex-container: column;
+        }
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__color-row {
+        lost-flex-container: row;
+        margin-top: 2.5rem;
+    }
+}

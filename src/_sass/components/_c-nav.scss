@@ -1,0 +1,85 @@
+.c-nav {
+    align-items: center;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100%;
+    opacity: 1;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    transition: opacity .25s ease-in-out;
+
+    &__hamburger-menu {
+        cursor: pointer;
+        height: 25px;
+        position: absolute;
+        right: 0;
+        width: 30px;
+        z-index: 2;
+
+        span {
+            background-color: $blue;
+            border-radius: 5px;
+            display: block;
+            height: 5px;
+            opacity: 1;
+            position: absolute;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+            width: 100%;
+
+            &:nth-child(1) {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top:10px;
+            }
+
+            &:last-child {
+                top:20px;
+            }
+        }
+
+        &--active {
+            span {
+
+                &:first-child {
+                    top:10px;
+                    transform: rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                    width: 0%;
+                }
+
+                &:last-child {
+                    top:10px;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+    }
+
+    &__container {
+        background-color: $white;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $blue;
+        font-size: $text-large;
+
+        &:hover {
+            color: darken($blue, 50%);
+            transition: color .5s ease-in-out;
+        }
+    }
+}
