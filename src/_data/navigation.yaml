@@ -1,0 +1,19 @@
+- name: Home
+  link: /
+  description: Link to the Home page
+  title: Home page link
+
+- name: About
+  link: /about
+  description: Link to the About page
+  title: About page link
+
+- name: Blog
+  link: /blog
+  description: Link to the Blog page
+  title: Blog page link
+
+- name: Style Guide
+  link: /style-guide
+  description: Link to the Style Guide
+  title: Style guide link

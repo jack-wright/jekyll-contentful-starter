@@ -1,86 +1,25 @@
 ---
-testBlogPost:
-- sys:
-    id: 2vmbwDfCziQiueQueUagu2
-    created_at: !ruby/object:DateTime 2018-06-14 09:55:33.186000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-14 15:17:17.871000000 Z
-    content_type_id: testBlogPost
-  title: Jack second test post
-  description: This is the description for post 2
-  slug: jack-second-post
-  body: This is the second test post and this is the modified additional content to
-    test the web hook out
-- sys:
-    id: 21DNHIZW96As8sWEqQWwys
-    created_at: !ruby/object:DateTime 2018-06-14 14:23:54.426000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-14 15:18:42.857000000 Z
-    content_type_id: testBlogPost
-  title: The fourth blog in the series
-  description: The description for the fourth post
-  slug: fourth-blog
-  body: The fourth blog in the series of blog
-- sys:
-    id: ZQu9PfKYMgiGOsekMqKS8
-    created_at: !ruby/object:DateTime 2018-06-14 09:52:17.368000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-14 15:17:01.943000000 Z
-    content_type_id: testBlogPost
-  title: Jack test post 1
-  description: This is the description for post 1
-  slug: jack-post-1
-  body: This is some dummy text to test jack test post 1
-- sys:
-    id: 3HDlt0wjks6O2qMg28M68C
-    created_at: !ruby/object:DateTime 2018-06-14 12:42:50.123000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-14 15:17:50.097000000 Z
-    content_type_id: testBlogPost
-  title: Third post coming directly from Contentful
-  description: This is the third description
-  slug: third-post
-  body: So, this seems to be working one more try
 blogPost:
 - sys:
-    id: 6flKqnujAImc6cOoe00WsK
-    created_at: !ruby/object:DateTime 2018-06-13 15:54:51.991000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-13 15:54:51.991000000 Z
+    id: 2vjBSwEz4USWWqcoSiSqMW
+    created_at: !ruby/object:DateTime 2018-06-24 21:00:17.915000000 Z
+    updated_at: !ruby/object:DateTime 2018-06-24 21:19:19.920000000 Z
     content_type_id: blogPost
-  title: Test With Jack So He Knows I'm Not Lying
-  slug: test-with-jack
-  content: TTTTTEEEESSSSTTTT
-- sys:
-    id: J18kM5DUMCEOCEEUeCKkc
-    created_at: !ruby/object:DateTime 2018-06-13 15:39:01.885000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-13 15:39:01.885000000 Z
-    content_type_id: blogPost
-  title: Test Post
-  slug: test-post
-  content: Chris Test
-- sys:
-    id: 4YaxtY1ViEWIMAock8eMAg
-    created_at: !ruby/object:DateTime 2018-06-12 14:23:40.684000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-12 14:59:37.468000000 Z
-    content_type_id: blogPost
-  title: Maecenas Auctor Pellentesque
-  slug: maecenas-auctor-pellentesque
-  content: |-
-    Cras hendrerit rutrum nunc, blandit molestie tellus placerat in. Nam vel mi eget ex fermentum gravida. Vestibulum venenatis mollis rutrum. Nunc neque urna, gravida fringilla ex eu, pretium iaculis nibh. Sed ultrices ex a metus laoreet, volutpat tincidunt metus sagittis. Donec vel feugiat diam. Nullam enim nunc, condimentum vitae blandit ac, finibus vitae massa. In sed diam libero. Donec egestas tellus nunc, ac egestas erat varius nec.
+  title: Getting started
+  slug: getting-started
+  seo_description: Brief description for SEO purposes
+  introduction: Introductory paragraph. In here we can put whatever we would like
+    to start the blog post with, something that summarises what the post is about
+    or poses a question for the post to explore.
+  body: |
+    This is the main body text.
 
-    Suspendisse sed turpis sit amet ante tempus scelerisque non in erat. Morbi in feugiat erat, vitae mattis eros. Donec facilisis cursus neque, et mollis nunc malesuada non. Pellentesque porta, mi vitae facilisis feugiat, nibh ex scelerisque urna, eget hendrerit nunc enim vitae mi. Vestibulum in risus nunc. Maecenas ante sapien, lobortis vel libero sed, lobortis viverra risus. Curabitur in dictum ex. Quisque nec velit libero. Maecenas auctor pellentesque semper. Nam nunc libero, aliquet vitae nisl eget, aliquam malesuada magna. Ut non eros urna. Curabitur aliquet arcu eget dapibus tristique. Sed non aliquet elit. Nulla ut lectus ac ligula feugiat aliquet vitae vitae magna. Aliquam quam erat, blandit nec dignissim eu, aliquam auctor urna.
-- sys:
-    id: 3K54YWoEak0GECkcu0MMoe
-    created_at: !ruby/object:DateTime 2018-06-14 10:08:29.433000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-14 10:08:29.433000000 Z
-    content_type_id: blogPost
-  title: New posr eeeeee
-  slug: new-posr
-  content: hddjdjdjd
-- sys:
-    id: 7GaCOILWV2OwmCgYYWIQe6
-    created_at: !ruby/object:DateTime 2018-06-12 14:23:16.706000000 Z
-    updated_at: !ruby/object:DateTime 2018-06-12 14:59:57.681000000 Z
-    content_type_id: blogPost
-  title: In Leo Sem
-  slug: in-leo-sem
-  content: |-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean venenatis placerat interdum. Integer pulvinar, lectus eu facilisis fermentum, enim lectus sodales magna, ac elementum turpis ipsum quis nisl. Etiam eget quam odio. Donec semper aliquam urna, sed vulputate ligula rutrum et. Morbi mollis magna quis massa aliquet, eu rhoncus lectus auctor. Aliquam ipsum tellus, dictum quis vehicula a, ultrices vel lacus. Proin libero augue, ultricies in scelerisque nec, congue id nisi. Nullam pretium lobortis condimentum. Donec rhoncus tempus odio, non rutrum enim ultrices ac. Integer iaculis, ex nec scelerisque cursus, sapien elit fringilla metus, vel ultrices elit risus sed est. Etiam at enim suscipit, fringilla quam a, dapibus est. Vivamus luctus purus ipsum, ut consectetur nunc dapibus quis. In ullamcorper tempor tempus. Curabitur id nibh in dui rhoncus consequat non vitae orci.
+    ## This is a subheading
 
-    Duis quis congue orci. In fringilla nec ex sed mattis. Vivamus aliquam ut dui sed placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. In leo sem, suscipit ac augue et, feugiat scelerisque ligula. Praesent ultricies, erat efficitur euismod sagittis, ligula purus auctor purus, suscipit interdum nisi libero eget nunc. Sed quis mi a odio facilisis elementum nec in lorem. Suspendisse ut elit id neque ullamcorper molestie.
+    This is some text following the sub heading
+
+
+    - An item in a list
+    - A second itme in the list
+
+    A link [google](http://google.com "google link")

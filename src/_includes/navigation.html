@@ -1,0 +1,5 @@
+<nav class="c-nav js-nav-container u-visibility-hidden" aria-label="Navigation for Jack Wright's website" title="Navigation section">
+    {% for item in site.data.navigation %}
+        <p><a href="{{ item.link }}" class="c-nav__link" aria-label="{{ item.description }}" title="{{ item.title }}">{{ item.name }}</a></p>
+    {% endfor %}
+</nav>

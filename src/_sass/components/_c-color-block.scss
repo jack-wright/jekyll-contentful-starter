@@ -1,0 +1,45 @@
+.c-color-block {
+    $this: &;
+
+    border: 1px solid $lightgrey;
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    height: 150px;
+    lost-column: 1 0 0;
+    margin-bottom: 1.5rem;
+
+    @media (min-width: 540px) {
+        lost-column: 1/3;
+    }
+
+    &--blue {
+        background-color: $blue;
+
+        #{$this}__caption {
+            color: $gold;
+        }
+    }
+
+    &--gold {
+        background-color: $gold;
+
+        #{$this}__caption {
+            color: $blue;
+        }
+    }
+
+    &--white {
+        #{$this}__caption {
+            color: $blue;
+        }
+    }
+
+    &__caption {
+        color:$white;
+        font-size: $text-small;
+        font-weight: bold;
+        padding: 0 1.5rem;
+    }
+}

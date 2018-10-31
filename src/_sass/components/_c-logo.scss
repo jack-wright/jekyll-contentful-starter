@@ -1,0 +1,9 @@
+.c-logo {
+    background:
+    radial-gradient(circle, transparent 0%, transparent 25%, $white 25%, $white 50%, transparent 50%),
+    linear-gradient(135deg, $blue 50%, $gold 50%);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    z-index: 2;
+}

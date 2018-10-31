@@ -22,14 +22,13 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            yarn install
-            gem install jekyll
+            yarn setup
             gem install percy-cli
       
       - run:
           name: run tests
           command: |
-            yarn run dev
+            yarn dev
             percy snapshot public
 
       - save_cache:

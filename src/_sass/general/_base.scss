@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    width: 100%;
+}
+
+body {
+    color: $blue;
+    font-family: $sans-font;
+    padding: $body-padding;
+}
+
+h1, h2, h3 {
+    margin: 2.5rem 0;
+}
+
+ul, li, p {
+    margin: 1.5rem 0;
+}
+
+h1, h2, h3 {
+    font-family: $serif-font;
+}
+
+h1 {
+    font-size: $text-xlarge;
+
+    @media (min-width: 768px) {
+        font-size: $text-xxlarge;
+    }
+}
+
+h2 {
+    font-size: $text-large;
+
+    @media (min-width: 768px) {
+        font-size: $text-xlarge;
+    }
+}
+
+h3 {
+    font-size: $text-large
+}
+
+p {
+    font-size: $text-regular;
+    line-height: 1.5;
+    letter-spacing: .1;
+}
+
+section {
+    overflow: auto;
+}

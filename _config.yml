@@ -2,17 +2,18 @@ destination: public
 source: src
 title: Jekyll + Contentful starter repo
 description: A basic starter repo for a Jekyll build that uses Contentful as a CMS.
+url: ""
 contentful:
   spaces:
     - posts:
         base_path: src/
-        space: ENV_CONTENTFUL_SPACE
-        access_token: ENV_CONTENTFUL_TOKEN
+        space: a2pp022734vb
+        access_token: 31adb98c816501ebe72cbe71ea82a9d6b774f25e5cfabf29db54517b5281e86e
         destination: /
 page_gen:
-    - data: 'posts.testBlogPost'
+    - data: 'posts.blogPost'
       template: 'post'
-      name: 'slug'
+      name: 'title'
       base_path: src/
       dir: 'posts'
       index_files: true
