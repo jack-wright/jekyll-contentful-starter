@@ -23,6 +23,7 @@ jobs:
           name: install dependencies
           command: |
             yarn install
+            gem install jekyll
             gem install percy-cli
       
       - run:
