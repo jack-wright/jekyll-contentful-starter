@@ -22,7 +22,14 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            bundle install --jobs=4 --retry=3 --path vendor/bundle
+            yarn install
+            gem install percy-cli
+      
+      - run:
+          name: run tests
+          command: |
+            yarn run dev
+            percy snapshot public
 
       - save_cache:
           paths:
